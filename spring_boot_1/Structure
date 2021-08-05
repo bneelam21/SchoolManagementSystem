@@ -1,0 +1,109 @@
+School Management System
+Model:-
+Person
+•	Name 
+•	Age
+•	Gender
+•	Address
+
+
+Student extends Person
+•	Student_id
+•	Student_rank
+•	Student_classroom
+
+
+Teacher extends Person 
+•	Teacher_id
+•	Department
+•	Salary
+•	Designation
+•	Experience 
+
+
+NonTeachingStaff extends Person 
+•	Staff_id
+•	Designation 
+
+
+TeacherAttendance
+•	Attendance_id
+•	Teacher_id
+•	Entry_date 
+•	Logintime
+•	Logouttime 
+
+
+StudentAttendance 
+•	Attendance_id
+•	Student_id
+•	Entry_date 
+•	Logintime
+•	Logouttime 
+
+
+StaffAttendance 
+•	Attendance_id
+•	Staff_id
+•	Entry_date 
+•	Logintime
+•	Logouttime 
+
+
+Exam
+•	Exam_id
+•	Exam_name
+•	Subject
+•	Exam_date 
+•	Exam_duration
+•	Standard
+•	Max_marks
+•	Room_no
+
+
+Sports 
+•	Sports_id 
+•	Student_id 
+•	Student_name 
+•	Standard 
+•	Game 
+
+
+Service:-
+Admin Service 
+•	Insert Student
+•	Get Students
+•	Delete Student 
+•	Get Student Details By Id 
+•	Update Student Details 
+•	Insert Teacher
+•	Get Teachers 
+•	Delete Teacher 
+•	Get Teacher Details By Id 
+•	Update Teacher Details
+•	Count Teachers 
+•	Insert Staff
+•	Get Staff
+•	Delete Staff
+•	Get Staff Details By Id 
+•	Update Staff Details
+•	Count Staff
+•	Student login
+•	Student logout
+•	Teacher login
+•	Teacher logout
+•	Staff login
+•	Staff logout
+
+
+Sports Service 
+•	Enroll Student 
+•	Get by name
+•	Get by game 
+
+
+Exam Service 
+•	Conduct Exam 
+•	Exam by date 
+•	Exam by Standard 
+•	Exam by Name 
